@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StageIcon /> renders the UI as expected 1`] = `
+<div
+  className="stageIcon"
+>
+  <img
+    alt="stage icon"
+    src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+  />
+  <p>
+    Caty Flucker
+  </p>
+  <div
+    className="onStage"
+  />
+</div>
+`;

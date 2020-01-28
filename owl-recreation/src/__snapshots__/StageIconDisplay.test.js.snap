@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StageIconDisplay /> renders the UI as expected 1`] = `
+<div
+  className="stage-display"
+>
+  <div
+    className="stageIcon"
+  >
+    <img
+      alt="stage icon"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    <p />
+    <div
+      className="onStage"
+    />
+  </div>
+  <div
+    className="stageIcon"
+  >
+    <img
+      alt="stage icon"
+      src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+    />
+    <p />
+    <div
+      className="notOnStage"
+    />
+  </div>
+</div>
+`;
