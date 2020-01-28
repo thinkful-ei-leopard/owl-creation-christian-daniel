@@ -1,17 +1,19 @@
 import React from 'react';
 import participants from './STORE';
 
-function Chat(chatEvent) {
-    <div className='chatEvent'>
-        <img alt='participant avatar' src={FindParticipantById(chatEvent.participantId).avatar} />
-        <p>{FindParticipantById(chatEvent.participantId).name}</p>
-<p className='timestamp'>{new Date(chatEvent.timestamp)}</p>
-<p className='chat-message'>{generateMessage(chatEvent.type, chatEvent.message)}</p>
-    </div>
+function Chat(props) {
+    return (<div className='chatEvent'>
+        <img alt='participant avatar' src={FindParticipantById(props.participantId).avatar} />
+        <p>{FindParticipantById(props.participantId).name}</p>
+<p className='timestamp'>{new Date(props.timestamp).toString()}</p>
+<p className='chat-message'>{generateMessage(props.type, props.message)}</p>
+    </div>)
 };
 
 function FindParticipantById(id) {
-    return participants.find(participant => participant.id === id)
+    return participants.find(participant => {
+       return participant.id === id ;
+    });
 };
 
 function generateMessage(type, message) {
@@ -28,5 +30,4 @@ function generateMessage(type, message) {
         return 'clap';
     }
 };
-
 export default Chat;

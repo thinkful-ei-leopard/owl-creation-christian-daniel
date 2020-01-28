@@ -1,11 +1,11 @@
 import React from 'react';
 
-function StageIcon(participant) {
+function StageIcon(props) {
     return (
         <div className='stageIcon'>
-            <img alt='stage icon' src={participant.avatar} />
-            <p>{participant.name}</p>
-            <div className={participant.onStage ? 'onStage' : 'notOnStage'}></div>
+            <img alt='stage icon' src={props.avatar} />
+            <p>{props.name}</p>
+            <div className={props.onStage ? 'onStage' : 'notOnStage'}></div>
         </div>
     )
 }

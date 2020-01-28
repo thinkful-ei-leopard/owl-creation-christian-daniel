@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 describe('<Chat />', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<Chat />, div);
+        ReactDOM.render(<Chat participantId={3} type='message' message='Hello world' time='1548852646559' timestamp='1548852484247' />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
     // it('renders the UI as expected', () => {
